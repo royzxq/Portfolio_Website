@@ -1,0 +1,13 @@
+<% subjects ||= [] %>
+<ul>
+<% subjects.each do |subject| %>
+  <li>
+    <%= subject.name %>
+    <ul>
+    <% subject.posts.sorted.each do |post| %>
+      <li><%= link_to_unless_current(post.title, subject_post_path(subject.id,post.id)) %></li>
+    <% end %>
+    </ul>
+  </li>
+  <% end %>
+</ul>

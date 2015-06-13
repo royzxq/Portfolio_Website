@@ -1,0 +1,12 @@
+<% if target.errors.any? %>
+    <div class="container">
+      <div class="alert alert-danger">
+        <p><strong><%= t('make_errors') %>：</strong></p>
+        <ul>
+          <% target.errors.full_messages.each do |msg| %>
+              <li><%= msg %></li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+<% end %>

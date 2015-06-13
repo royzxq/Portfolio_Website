@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome Page</title>
+    <%= stylesheet_link_tag('visitor', :media => 'all') %>
+  </head>
+  <body>
+    <div id="header">
+      <h1>Welcome!</h1>
+    </div>
+    <div id="main">
+      <div id="navigation">
+        <%= render(:partial => 'layouts/navigation', :locals => {:subjects => @subjects}) %>
+      </div>
+      <div id="content">
+        <%= yield %>
+      </div>
+      <div><%= link_to 'Log in', access_index_path , class: 'action'%></div>
+      <div class="clear"></div>
+    </div>
+  </body>
+</html>

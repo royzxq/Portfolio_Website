@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+
+<%= link_to "Back to menu", :controller => "access", :action => "index", class: 'back-link' %>
+<h1>Listing Subjects </h1>
+
+<h3> <%= link_to "Add new subject", new_subject_path, class: "btn btn-primary"%></h3>
+<table cellspacing="0" class="table table-bordered table-striped table-hover">
+  <thead>
+    <tr>
+      <th>Subject</th>
+      <th colspan="4">Action</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @subjects.each do |subject| %>
+      <tr>
+        <td><%= subject.name%></td>
+        <td><%= link_to 'View posts', subject_posts_path(subject) , class: 'btn btn-info'%></td>
+        <td><%= link_to 'Show', subject_path(subject) , class: 'btn btn-info'%></td>
+        <td><%= link_to 'Edit', edit_subject_path(subject), class: 'btn btn-info' %></td>
+        <td><%= link_to 'Destroy', subject, method: :delete, class: 'btn btn-danger', data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<div class="panel-footer"> <%#= paginate @subjects %> </div>
+
+<br>
+
