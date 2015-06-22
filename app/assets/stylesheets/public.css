@@ -1,0 +1,198 @@
+// Place all the styles related to the Public controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+/*
+By Herreman David
+http://www.free-css-templates.com
+StyleSheet for BinaryNews Template
+*/
+
+body {
+ background-color: #e7e7e7;
+ color: #FFF;
+ padding: 0; margin: 0; font: 0.7em Arial, sans-serif; line-height: 1.5em;
+}
+
+
+
+#wrapper{
+	/*border: 1px solid black;*/
+    margin: 0 auto;
+    width: 100%;
+	/*overflow: hidden;*/
+}
+
+
+
+#sidebar {
+    background: rgba(29, 29, 29, 0.93);
+    width: 250px;
+    /*position: absolute;*/
+    height: 100%;
+    color: #b3b3b3;
+    display: inline-block;
+    float: left; 
+    /*color: red;*/
+}
+
+#main{
+	float: left;
+	width: 80%;
+	/*position: relative;
+	left: 250px;*/
+	text-align: justify;
+
+}
+
+#content{
+	width: 70%;
+	height: 90%;
+	position: relative;
+	left: 10%;
+}
+
+#sidebar p {
+    padding: 20px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.background{
+	-webkit-opacity: .20;
+	opacity: 0.2;
+}
+.img_container{
+	width: 100%;
+	height: 50%;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.img_container img{
+	margin-top: 40px;
+	margin-bottom: 30px;
+	width: 60%;
+	height: auto;
+}
+
+.illustration{
+	width: 50%;
+	height: auto;
+	text-align: center;
+	float: center;
+	margin: 0 auto;
+	/*margin-bottom: 30px;*/
+	
+}
+
+.illustration img{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 100%;
+	height: auto;
+}
+
+.sub_title{
+	font-family: helvetica, sans-serif;
+  font-size: 60px;
+  color: #000000;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-align: left;
+  letter-spacing: 0.4px;
+  line-height: 60px;
+}
+
+.txt_content{
+  font-family: courier, "courier new", monospace;
+  font-size: 19px;
+  color: #000000;
+  /*font-style: oblique;*/
+  margin-top: 20px;
+  font-weight: normal;
+  font-variant: normal;
+  text-align: justify;
+  letter-spacing: 0px;
+  line-height: 24px;
+  white-space: pre-wrap;
+  text-indent: 10px;
+}
+
+
+
+
+.header {
+	background: #000 url(header.jpg) no-repeat center bottom ;
+	background-size: 100%;
+	color: #FFF;
+	width: 100%;
+	height: 200px;
+	margin: auto;
+	padding: 0;
+	float: left;
+}
+
+.header .title a{
+	float: left;
+	padding: 12px 0 0 84px;
+	color: white;
+	font: bold 3em Arial, sans-serif;
+}
+
+/*.header a {
+	float: left;
+	padding: 12px 0 0 84px;
+	color: white;
+	font: bold 1.2em Arial, sans-serif;
+}*/
+
+
+.header .slogan {
+	float: left;
+	clear: both;
+	padding: 2px 0 0 84px;
+	color: #FFF;
+	font: bold 1.8em Arial, sans-serif;
+}
+
+#nav{
+	text-align: center;
+	margin-top: 100px;
+	margin-bottom: 40px;
+}
+
+
+#links{
+	text-align: center;
+	padding-top: 300px;
+	float: bottom;
+	font-size: 20px;
+}
+
+.links{
+	font-family: "times new roman", times, serif;
+  font-size: 20px;
+  color: #E8E8E8;
+  font-style: italic;
+  font-weight: bold;
+  font-variant: normal;
+  text-align: center;
+  letter-spacing: 0px;
+  line-height: 20px;
+}
+
+.ui-menu {
+        width: 250px;
+        display: inline-block;
+  }
+
+/*.main_content {
+	background-color: #FFF;
+	margin: 0 auto;
+	padding: 0px;
+	width: 1028px;
+}
+
+*/
+

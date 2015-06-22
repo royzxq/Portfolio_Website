@@ -1,0 +1,13 @@
+<p id="notice"><%= notice %></p>
+
+<%#= link_to 'Edit', edit_subject_post_path(@subject.id,@post) %> 
+<%#= link_to 'Back', subject_posts_path(@subject.id) , subjct_id: @subject.id %>
+<%= render partial: "picture", locals: {post: @post}%>
+
+    <div class='sub_title'><%= @post.title%></div>
+    <div class='txt_content'> 
+      <%= raw(@post.context) %>
+    </div>    
+
+
+</div>

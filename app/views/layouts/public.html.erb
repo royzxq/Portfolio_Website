@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome Page</title>
+
+    <%= stylesheet_link_tag('visitor', :media => 'all') %>
+    <%= javascript_include_tag("application")%>
+      <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/mint-choc/jquery-ui.css">
+          
+  </head>
+  <body>
+    <div id="wrapper">
+      <div class="header">
+        <div class="title"><%= link_to "Xinquan Zhou's Website", :controller => "public", :action => "index", class: 'title' %></div>
+        <div class="slogan">Welcome!</div>
+      </div>
+      <div id="sidebar">
+        <div id='nav'>
+          <%= render(:partial => 'layouts/navigation', :locals => {:subjects => @subjects}) %>
+        </div>
+        <div id='links'>
+          <h2>Links</h2>
+          <div >
+
+             <%= link_to "Linkedin", "https://www.linkedin.com/pub/zhou-xinquan/56/502/668", class: 'links' %><br>
+            
+            <%= link_to "Github", "https://github.com/royzxq", class: 'links'%><br>
+            <%= link_to 'Admin Log in', access_index_path , class: 'links'%>
+          </div>
+        </div>
+      </div>
+      <div id="main", class="content">
+        <div id="content">
+          <%= yield %>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

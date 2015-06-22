@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<%#= link_to 'Edit', edit_subject_post_path(@subject.id,@post) %> 
+<%#= link_to 'Back', subject_posts_path(@subject.id) , subjct_id: @subject.id %>
+<% if @subject.feature_image.present?%>
+<%= render partial: "picture", locals: {subject: @subject}%>
+<% end %>
+
+    <div class='sub_title'><%= @subject.name%></div>
+    <div class='txt_content'> 
+      <%= raw(@subject.body) %>
+    </div>    
+
+
+</div>
