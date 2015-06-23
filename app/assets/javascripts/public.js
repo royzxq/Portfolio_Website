@@ -15,8 +15,9 @@ $(function(){
 		"height":height
 	})
 	$('#sidebar').css({
-		"height":height
+		"height":"100%"
 	})
+
 	// $('.footer').css({width: width});
 });
 

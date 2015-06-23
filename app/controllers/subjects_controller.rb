@@ -13,7 +13,7 @@ class SubjectsController < ApplicationController
   # GET /subjects/1
   # GET /subjects/1.json
   def show
-        @page_title = "Show Subject"
+        @page_title = @subject.name
         @subjects = Subject.sorted
   end
 

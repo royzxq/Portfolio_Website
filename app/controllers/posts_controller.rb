@@ -8,12 +8,14 @@ class PostsController < ApplicationController
   # GET /posts.json
   def index
     @posts = @subject.posts.sorted
+    @page_title = "Pages"
   end
 
   # GET /posts/1
   # GET /posts/1.json
   def show
     @subjects = Subject.sorted
+    @page_title = @post.title
   end
 
   # GET /posts/new

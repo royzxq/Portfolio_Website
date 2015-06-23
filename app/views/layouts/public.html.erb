@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Welcome Page</title>
+    <title><%= @page_title%></title>
 
     <%= stylesheet_link_tag('visitor', :media => 'all') %>
     <%= javascript_include_tag("application")%>
@@ -10,9 +10,14 @@
   </head>
   <body>
     <div id="wrapper">
+
       <div class="header">
-        <div class="title"><%= link_to "Xinquan Zhou's Website", :controller => "public", :action => "index", class: 'title' %></div>
+
+        <div class="title">
+          <%= link_to "Xinquan Zhou's Website", :controller => "public", :action => "index", class: 'title' %>
+        </div>
         <div class="slogan">Welcome!</div>
+
       </div>
       <div id="sidebar">
         <div id='nav'>
